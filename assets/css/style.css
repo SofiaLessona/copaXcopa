@@ -1,0 +1,255 @@
+*{ 
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Raleway'; 
+}
+
+body{ 
+    margin: 0;
+    height: 98vh;
+    width: 98.7vw;
+    
+    background-image: url(/assets/media/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    color: white;
+    
+}
+
+
+    /* HEADER */
+
+nav {  
+
+    height: 15%;
+    width: 99.9vw;
+
+    background-color: rgba(23, 7, 16, 0.9);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boton_logo{
+    height: 90px;
+}
+
+.lista-paginas {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+.enlace:link, .enlace:visited {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.enlace:active{
+    font-size: 21px;
+    color:black;
+}
+
+
+    /* MAIN */
+
+.main_index{
+    height: 75%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+    margin: 50px;
+    /* padding: 30px; */
+    /* flex-wrap: wrap;   */
+
+
+}
+
+.tarjeta-main{
+    background-color: rgba(23, 7, 16, 0.482);
+    width: 30%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em 2em;
+    border-radius: 3em;
+}
+
+.boton-tarjeta:link, .boton-tarjeta:visited {
+    background-color: rgb(23, 7, 16) ;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px white;
+    padding: 10px;
+}
+.boton-tarjeta:active{
+    font-size: 21px;
+    color:white;
+}
+
+
+    /* FOOTER */
+
+footer{
+
+    height: 15%;
+    width: 100vw;
+
+    background-color: rgba(23, 7, 16, 0.9);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+footer > a > img {
+    border-radius: 50%;
+}
+
+
+        /* MEDIA */
+
+
+@media all and (max-width: 850px) {
+
+
+        /* HEADER */
+
+    nav {  
+        height: 15%;
+        width: 99.9vw;
+        background-color: rgba(23, 7, 16, 0.9);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: center; */
+        }
+
+    .lista-paginas {
+        list-style: none;
+        display: grid;
+        /* flex-direction: row; */
+        align-items: center;
+        gap: 1.5em;
+        
+        /* margin-right: 60px; */
+    }
+
+
+    /* MAIN  */
+   
+    main{
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em; 
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        /* margin-left: -10%; */
+        /* padding: 30px; */
+        /* flex-wrap: wrap;   */ 
+    
+    }
+    
+    .tarjeta-main{
+        background-color: rgba(23, 7, 16, 0.482);
+        width: 80%;
+        height: 30%;
+        margin-left: 8%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1em 1em;
+        border-radius: 3em;
+    }
+    .tarjeta-main h2{
+        font-size: 1em;
+    }
+
+    .boton-tarjeta:link, .boton-tarjeta:visited {
+        background-color: rgb(23, 7, 16) ;
+        font-size: 1em;
+        text-decoration: none;
+        color: black;
+        text-shadow: 1px 1px white;
+        padding: 1px;
+    }
+    .boton-tarjeta:active{
+        font-size: 1em;
+        color:white;
+    }
+
+}
+    
+
+
+
+@media all and (max-width: 450px) {
+        /* HEADER */
+
+        nav {  
+            height: 15%;
+            width: 99.9vw;
+            background-color: rgba(23, 7, 16, 0.9);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .lista-paginas {
+            display: none;
+           
+        }
+    
+    
+        /* MAIN  */
+       
+        main{
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em; 
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+    
+            /* margin-left: -10%; */
+            /* padding: 30px; */
+            /* flex-wrap: wrap;   */ 
+        
+        }
+        
+        .tarjeta-main{
+            background-color: rgba(23, 7, 16, 0.482);
+            width: 80%;
+            height: 30%;
+            margin-left: 8%;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2em 2em;
+            border-radius: 3em;
+        }
+}

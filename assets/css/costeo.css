@@ -1,0 +1,49 @@
+.main_costeo{
+    background-color: rgba(23, 7, 16, 0.482);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 3em;
+    margin: 50px 50px;
+}
+
+h2{
+    width: 60%;
+    padding: 5px;
+}
+
+.contenedor_costeo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input{
+    width: 50%;
+}
+
+.formulario {
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid white;
+}
+
+.resultado_costo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
