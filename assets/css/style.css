@@ -42,7 +42,7 @@ nav {
     color: white;
 }
 
-.enlace :active {
+.enlace:active {
     font-size: 2em;
     color:black;
 }
