@@ -1,16 +1,19 @@
 .main_costeo{
+    /* height: 75%; */
     background-color: rgba(23, 7, 16, 0.482);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    padding: 50px 30px;
+    box-sizing: content-box;
     border-radius: 3em;
-    margin: 50px;
+    margin: 10px 50px;
 }
 
 h2{
-    width: 60%;
+    width: 80%;
     padding: 5px;
 }
 
@@ -21,7 +24,7 @@ h2{
 }
 
 .formulario {
-    padding-bottom: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +49,7 @@ h2{
     align-items: center;    
 }
 
-button{
+.boton-agregarProd{
     width: 200px;
     height: 50px;
     margin: 10px;
@@ -57,7 +60,7 @@ button{
     font-weight: bolder;
 }
 
-button:hover{
+.boton-agregarProd:hover{
     cursor: pointer;
 }
 
