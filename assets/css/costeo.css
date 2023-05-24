@@ -17,7 +17,7 @@ h2{
     padding: 5px;
 }
 
-.contenedor_costeo{
+.contenedor_productos{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -32,13 +32,30 @@ h2{
     border-bottom: 2px solid white;
 }
 
+/* .contenedor-input-producto{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+} */
+
+/* .boton-eliminarProd{
+    background-color: rgba(23, 7, 16, 0.50);
+    border-radius: 50%;
+    height: 20px; 
+    width: 20px;
+    padding: 5px;
+} */
+
 .formulario input{
     width: 20%;
     height: 30px;
 }
 
 #nombreProducto{
-    width: 40%;
+    width: 30%;
 }
 
 .resultado_costo{
@@ -49,7 +66,7 @@ h2{
     align-items: center;    
 }
 
-.boton-agregarProd{
+.boton-calcular, .boton-reiniciar{
     width: 200px;
     height: 50px;
     margin: 10px;
@@ -60,7 +77,7 @@ h2{
     font-weight: bolder;
 }
 
-.boton-agregarProd:hover{
+.boton-calcular:hover, .boton-reiniciar:hover{
     cursor: pointer;
 }
 
@@ -83,8 +100,17 @@ h2{
         flex-direction: column;
     }
 
+    .contenedor-input-producto{
+        width: 100%;
+    }
+
+    .formulario input{
+        width: 50%;
+        height: 30px;
+    }
+
     #nombreProducto{
-        width: 80%;
+        width: 50%;
     }
    
 }
