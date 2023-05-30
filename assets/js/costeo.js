@@ -14,7 +14,7 @@ botonCalcular.addEventListener("click", ()=>{
     //Calculo el costo de los ml del ingrediente
     let precioRec=(mlRec*precioPres)/mlPres;
     console.log("el precio calculado" + precioRec);
-
+    
     //Actualizo el valor de costo
     costo.innerHTML=`
         <h2>Costo de los ml de la receta:  $${precioRec.toFixed(2)}</h2>

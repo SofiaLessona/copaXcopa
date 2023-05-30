@@ -6,10 +6,9 @@
 }
 
 body{ 
-    /* height: 98vh; */
     width: 98vw;   
     background-color: rgba(40, 21, 27,0.9); 
-    background-image: url(/assets/media/img/fondo.jpg);
+    background-image: url(../media/img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;    
@@ -17,6 +16,19 @@ body{
     
 
              /* HEADER */
+
+.boton_logo{
+    animation-name: shadow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes shadow {
+    100%{
+        opacity: 1;
+    }        
+}
 
 nav {  
     height: 15%;
@@ -104,7 +116,7 @@ nav {
 footer{
     height: 7%;
     width: 100vw;
-    background-color: rgba(23, 7, 16, 0.9);
+    background-color: rgb(40, 21, 27);
     position: fixed;
     bottom: 0px;
     display:flex;
@@ -188,6 +200,13 @@ footer > a > img {
 
 @media all and (max-width: 450px) {
         /* HEADER */
+        
+        /* .boton_logo img{
+            max-width: 300px;
+            max-height: 75px;
+    
+        } */
+
 
     nav {  
         width: 99.9vw;
